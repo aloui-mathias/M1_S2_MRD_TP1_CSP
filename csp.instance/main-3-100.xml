@@ -1,10 +1,10 @@
 <instance format="XCSP3" type="CSP">
   <variables>
-    <array id="box" size="[100]"> 0..2 </array>
+    <array id="box" size="[100]"> 1..3 </array>
   </variables>
   <constraints>
     <group>
-      <intension> and(ne(%0,%1),ne(%0,%2),ne(%1,%2)) </intension>
+      <intension> or(ne(%0,%1),ne(%0,%2),ne(%1,%2)) </intension>
       <args> box[0..2] </args>
       <args> box[0] box[2..3] </args>
       <args> box[0] box[3..4] </args>
